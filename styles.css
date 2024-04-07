@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+/* Estilos de los mensajes */
+
+/* .message {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+} */
+
+
+.message.sender-blue {
+    background-color: lightblue;
+}
+
+.message.sender-red {
+    background-color: salmon;
+}
+
+/* Otros estilos */
+#chat-container {
+    height: 500px;
+    width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#message-input {
+    width: calc(100% - 75px);
+    margin-right: 10px;
+}
+
+#send-button {
+    width: 60px;
+}
+#typing{
+    width: 90%;
+    /* border: solid; */
+    position: absolute;
+    bottom: 10px;
+    left: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+#typing-text{
+   display: flex;
+}
+#messages{
+    height: 90%;
+    width: 80%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.message {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    display:block; /* Cambiado a inline-block */
+}
+.message.sender-red{
+    text-align: end;
+}
+.message.sender-blue{
+    text-align: end;
+}
+/* #type-global{
+    border: solid;
+} */
