@@ -1,28 +1,3 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     const messagesContainer = document.getElementById('messages');
-//     const messageInput = document.getElementById('message-input');
-//     const sendButton = document.getElementById('send-button');
-
-//     sendButton.addEventListener('click', function() {
-//         const messageText = messageInput.value.trim(); // Obtener el texto del mensaje, eliminando espacios en blanco al principio y al final
-        
-//         if (messageText !== '') { // Verificar si el mensaje no está vacío
-//             const messageElement = document.createElement('div');
-//             messageElement.textContent = messageText;
-//             messageElement.classList.add('message');
-            
-//             // Determinar el color del mensaje basado en el remitente
-//             if (Math.random() < 0.5) {
-//                 messageElement.classList.add('sender-blue');
-//             } else {
-//                 messageElement.classList.add('sender-red');
-//             }
-            
-//             messagesContainer.appendChild(messageElement); // Agregar el mensaje al contenedor
-//             messageInput.value = ''; // Limpiar el input del mensaje
-//         }
-//     });
-// });
 
 document.addEventListener("DOMContentLoaded", function() {
     const messagesContainer = document.getElementById('messages');
