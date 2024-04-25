@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    font-family: sans-serif;
 }
 
 
@@ -16,11 +16,13 @@
 
 
 .message.sender-blue {
-    background-color: lightblue;
+    background-color: rgba(0, 0, 255, 0.5);
+    color: rgb(255, 255, 255);
 }
 
 .message.sender-red {
     background-color: salmon;
+    color: rgb(255, 255, 255);
 }
 
 /* Otros estilos */
@@ -34,24 +36,29 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  
+
 }
 
 #message-input {
     width: calc(100% - 75px);
     margin-right: 10px;
+    
 }
 
 #send-button {
     width: 60px;
+  
 }
 #typing{
     width: 90%;
-    /* border: solid; */
+    border: 1px solid #ccc;
     position: absolute;
     bottom: 10px;
     left: 2.5rem;
     display: flex;
     justify-content: space-between;
+    padding: .5rem;
 
 
 }
@@ -59,12 +66,14 @@
    display: flex;
 }
 #messages{
-    height: 90%;
+    height: 80%;
     width: 80%;
     overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: end;
+    /* border: solid; */
+    padding-right: 1.5rem;
 }
 .message {
     margin-bottom: 10px;
@@ -74,10 +83,36 @@
 }
 .message.sender-red{
     text-align: end;
+    padding: 5px 1rem;
+    border-radius: 15px;
 }
 .message.sender-blue{
     text-align: end;
+    padding: 5px 1rem;
+    border-radius: 15px;
 }
 /* #type-global{
     border: solid;
 } */
+input{
+    height: 2rem;
+    border-radius: 9 px;
+    padding:.5rem;
+}
+button{
+    height: 2rem;
+    width: 4rem;
+}
+.send-button{
+    background-color: rgba(0, 0, 255, 0.5);
+    color: white;
+    border-radius: 9px;
+    border: 1px solid black;
+}
+#first_button{
+    margin-left: .3rem;
+    background-color: salmon;
+    color: white;
+    border-radius: 9px;
+    border: 1px solid black;
+}
